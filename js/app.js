@@ -2,9 +2,7 @@ const userPassword = document.getElementById ('password');
 
 console.log ('elemento HTML con ID password');
 
-userPassword.innerHTML = ('password');
-
-
+/*
 // chiedere il nome
 let name = prompt ('Come ti chiami?');
 
@@ -29,3 +27,5 @@ console.log ('Il tuo numero è:', number);
 
 //PASSWORD
 userPassword.innerHTML = name + surname  + color  + number;
+
+*/

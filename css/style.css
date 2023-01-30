@@ -1,0 +1,132 @@
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    color: yellow;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.supprise{
+    font-family: 'Press Start 2P', cursive;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.box-title{
+    position: relative;
+    padding: 40px 50px 30px;
+}
+
+.box-title:hover .supprise{
+    display: block;
+}
+
+.pacman-left,
+.pacman-right {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+
+.pacman-left{
+    top: -10px;
+    left: 0;
+}
+
+.pacman-right{
+    top: -10px;
+    left: calc(100% - 30px);
+    transform: rotate(180deg);
+}
+
+.container .pacman-left {
+    animation: moveTopWhiteCompletelyLeft 5s linear;
+}
+@keyframes moveTopWhiteCompletelyLeft {
+    0% {
+        left: 0;
+        top: -10px;
+    }
+    38% {
+        left: calc(100% - 30px);
+        top: -10px;
+        transform: rotate(0);
+    }
+    39%{
+        transform: rotate(90deg);
+    }
+    50% {
+        left: calc(100% - 30px);
+        top: 100%;
+        transform: rotate(90deg);
+    }
+    51%{
+        transform: rotate(180deg);
+    }
+    88% {
+        left: 0;
+        top: 100%;
+        transform: rotate(180deg);
+    }
+    89%{
+        transform: rotate(270deg);
+    }
+    100% {
+        left: 0;
+        top: -10px;
+        transform: rotate(360deg);
+    }
+}
+
+.container .pacman-right {
+    animation: moveTopWhiteCompletelyRight 5s linear;
+}
+@keyframes moveTopWhiteCompletelyRight {
+    0% {
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+    38% {
+        left: 0;
+        top: -10px;
+        transform: rotate(180deg);
+    }
+    39%{
+        transform: rotate(90deg);
+    }
+    50% {
+        left: 0;
+        top: 100%;
+        transform: rotate(90deg);
+    }
+    51%{
+        transform: rotate(0);
+    }
+    88%{
+        left: calc(100% - 30px);
+        top: 100%;
+        transform: rotate(0);
+    }
+    89%{
+        transform: rotate(-90deg);
+    }
+    100% {
+        left: calc(100% - 30px);
+        top: -10px;
+        transform: rotate(-180deg);
+    }
+}
