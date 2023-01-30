@@ -27,4 +27,5 @@ number = parseFloat(number);
 
 console.log ('Il tuo numero è:', number);
 
+//PASSWORD
 userPassword.innerHTML = name + surname  + color  + number;
