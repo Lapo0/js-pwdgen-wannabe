@@ -1,18 +1,30 @@
-const userPassword = document.getElementById ('password')
+const userPassword = document.getElementById ('password');
 
-console.log ('elemento HTML con ID password')
+console.log ('elemento HTML con ID password');
 
-userPassword.innerHTML = ('password')
+userPassword.innerHTML = ('password');
 
 
 // chiedere il nome
-let name = prompt ('Come ti chiami?')
+let name = prompt ('Come ti chiami?');
 
-console.log ('Il tuo nome è:', name)
+console.log ('Il tuo nome è:', name);
 
 // chiedere il cognome
-let surname = prompt ('Qual è il tuo cognome?')
+let surname = prompt ('Qual è il tuo cognome?');
 
-console.log ('Il tuo nome è:', surname)
+console.log ('Il tuo cognome è:', surname);
 
-userPassword.innerHTML = name + ' ' + surname
+// chiedere il colore
+let color = prompt ('Qual è il tuo colore preferito?');
+
+console.log ('Il tuo colore è:', color);
+
+// chiedere il numero
+let number = prompt ('Qual è il tuo numero di scarpe?');
+
+number = parseFloat(number);
+
+console.log ('Il tuo numero è:', number);
+
+userPassword.innerHTML = name + surname  + color  + number;
